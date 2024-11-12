@@ -136,6 +136,10 @@ func (d *Default) ConfigProviderUrl() string {
 	return d.configProviderUrl
 }
 
+func (d *Default) SetConfigProviderUrl(configProviderUrl string) {
+	d.configProviderUrl = configProviderUrl
+}
+
 // Profile returns the profile name to use, if one was specified
 func (d *Default) Profile() string {
 	return d.profile
